@@ -11,13 +11,7 @@ const port = process.env.PORT || 3002;
 
 app.post("/check-user", (req, res) => {
   const { user, pass } = req.body;
-  console.log("ehab melhem");
   let elemnt = users.find((elm) => elm.user === user && elm.pass === pass);
-  if (elemnt) {
-    res.send({ messege: "Login is good" });
-  } else {
-    res.send({ messege: "Login is not Good" });
-  }
 });
 
 app.post("/add-user", (req, res) => {

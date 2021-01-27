@@ -1,0 +1,8 @@
+.login > .flex {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  justify-content: center;
+}
+.fle>

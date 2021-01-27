@@ -1,0 +1,10 @@
+.signup > .flex {
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.signup > .flex > input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
