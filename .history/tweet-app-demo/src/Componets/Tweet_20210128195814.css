@@ -1,0 +1,56 @@
+.tweet__form {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(23, 99, 161);
+  border-radius: 999px;
+}
+.tweet__form > input {
+  margin-left: 11px;
+  padding: 7px;
+  outline: none;
+  border: none;
+}
+.tweet {
+  width: 400px;
+  border: 1px solid black;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+div element */ .Container {
+  height: 150px;
+  width: 250px;
+  overflow-y: auto;
+  background-color: green;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+/* Set the effects to the division 
+    named content */
+.Content {
+  height: 200px;
+  color: white;
+  text-align: center;
+}
+
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

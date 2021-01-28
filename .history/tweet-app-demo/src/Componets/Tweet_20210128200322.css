@@ -1,0 +1,45 @@
+.tweet__form {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(23, 99, 161);
+  border-radius: 999px;
+}
+.tweet__form > input {
+  margin-left: 11px;
+  padding: 7px;
+  outline: none;
+  border: none;
+}
+.tweet {
+  background-color: whitesmoke;
+  width: 400px;
+  border: 1px solid black;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(13, 132, 230, 0.76);
+  border-radius: 999px;
+}
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: rgb(37, 156, 235);
+  border-radius: 999px;
+}
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}
+.container {
+  margin: 0 auto;
+  margin-top: 10px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  height: 300px;
+  width: fit-content;
+  padding-right: 270px;
+}

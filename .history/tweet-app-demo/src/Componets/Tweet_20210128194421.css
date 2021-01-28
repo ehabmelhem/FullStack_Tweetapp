@@ -1,0 +1,7 @@
+.tweet__form {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(23, 99, 161);
+  border-radius: 999px;
+}

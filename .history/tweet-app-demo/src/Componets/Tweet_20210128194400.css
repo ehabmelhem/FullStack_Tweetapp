@@ -1,0 +1,5 @@
+.tweet__form {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
