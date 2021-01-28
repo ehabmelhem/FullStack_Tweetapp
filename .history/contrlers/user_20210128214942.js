@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-let tweets = []; //[{user,tweet}]
+const tweets = []; //[{user,tweet}]
 const users = [];
 
 exports.getUsers = (req, res) => {
@@ -15,8 +15,9 @@ exports.getTweets = (req, res) => {
 exports.addTweet = (req, res) => {
   const { tweet } = req.query;
   // tweets.push(tweet);
-  tweets = [tweet, ...tweets];
+  tweets=[]
   res.send(tweets);
+
 };
 exports.checkUser = (req, res) => {
   const { user, pass } = req.body;

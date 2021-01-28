@@ -2,12 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Tweet.css";
 import IconButton from "@material-ui/core/IconButton";
 import AddIcon from "@material-ui/icons/Add";
-import { useLocation } from "react-router-dom";
 function Tweet() {
   const [tweets, setTweets] = useState([]);
   const [input, setInput] = useState("");
-  const location = useLocation();
-
   fetch("/users/get-tweets")
     .then((r) => r.json())
     .then((data) => {
@@ -16,7 +13,7 @@ function Tweet() {
     });
   const handelClick = (e) => {
     e.preventDefault();
-    fetch(`/users/add-tweet?tweet=${location.state.name + ":" + input}`)
+    fetch(`/users/add-tweet?tweet=${input}`)
       .then((r) => r.json())
       .then((data) => {
         console.log(data);
@@ -37,12 +34,7 @@ function Tweet() {
           name=""
           id=""
         />
-        <IconButton
-          disabled={!input}
-          type="submit"
-          onClick={handelClick}
-          color="primary"
-        >
+        <IconButton dis type="submit" onClick={handelClick} color="primary">
           <AddIcon />
         </IconButton>
       </form>

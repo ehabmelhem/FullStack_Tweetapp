@@ -16,7 +16,7 @@ function Tweet() {
     });
   const handelClick = (e) => {
     e.preventDefault();
-    fetch(`/users/add-tweet?tweet=${location.state.name + ":" + input}`)
+    fetch(`/users/add-tweet?tweet=${location.state.name + input}`)
       .then((r) => r.json())
       .then((data) => {
         console.log(data);

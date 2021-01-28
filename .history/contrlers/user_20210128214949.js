@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-let tweets = []; //[{user,tweet}]
+const tweets = []; //[{user,tweet}]
 const users = [];
 
 exports.getUsers = (req, res) => {

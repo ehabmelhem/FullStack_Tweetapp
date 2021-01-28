@@ -16,10 +16,10 @@ function Gotweet({ pass, user, path, button_text }) {
         .then((data) => {
           console.log(data);
         });
-      history.push({
-        pathname: "/tweet",
-        state: { name: user },
-      });
+        history.push({
+          pathname="/tweet",
+          state={}
+        })
     }
     // history.push(`/${path}`);
   };
